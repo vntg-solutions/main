@@ -129,17 +129,3 @@ function BentoCard({
   );
 }
 
-type MetricProps = {
-  label: string;
-  value: string;
-};
-
-function Metric({ label, value }: MetricProps) {
-  return (
-    <div className="rounded-xl bg-black/70 p-2 ring-1 ring-white/10">
-      <div className="text-[10px] text-zinc-500">{label}</div>
-      <div className="mt-1 text-xs font-semibold text-zinc-100">{value}</div>
-    </div>
-  );
-}
-

@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, ShieldCheck, Sparkles } from "lucide-react";
 import { Section } from "./section";
-import { cn } from "../lib/utils";
 
 const rotatingWords = ["Small Business", "Scale-ups", "Global Enterprise"];
 
