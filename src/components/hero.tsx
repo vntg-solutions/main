@@ -19,19 +19,8 @@ export function Hero() {
   }, []);
 
   return (
-    <Section className="relative mx-auto mt-10 flex max-w-6xl flex-col gap-12 py-10 md:mt-16 md:py-16">
-      <div
-        aria-hidden
-        className={cn(
-          "pointer-events-none absolute inset-0 -z-10 overflow-hidden rounded-[32px] border border-white/10",
-          "bg-grid bg-primary/60 shadow-soft-xl"
-        )}
-      >
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(59,130,246,0.22),transparent_55%)]" />
-      </div>
-
-      <div className="relative flex flex-col gap-10 px-6 py-10 md:flex-row md:items-center md:justify-between md:px-10 md:py-14">
-        <div className="max-w-xl space-y-6">
+    <Section className="relative mx-auto mt-10 flex max-w-6xl flex-col gap-10 rounded-3xl border border-white/10 bg-black/50 px-6 py-10 md:mt-16 md:flex-row md:items-center md:justify-between md:px-10 md:py-12">
+      <div className="max-w-xl space-y-6">
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
@@ -92,75 +81,7 @@ export function Hero() {
             </button>
           </div>
 
-          <div className="flex flex-wrap gap-4 text-[11px] text-zinc-500">
-            <div className="flex items-center gap-2">
-              <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
-              <span>99.95% uptime SLOs</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="h-1.5 w-1.5 rounded-full bg-sky-400" />
-              <span>Global-ready from the first tenant</span>
-            </div>
-          </div>
         </div>
-
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95, y: 24 }}
-          animate={{ opacity: 1, scale: 1, y: 0 }}
-          transition={{ delay: 0.1, duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-          className="mt-4 w-full max-w-sm md:mt-0"
-        >
-          <div
-            className={cn(
-              "glass-surface relative overflow-hidden rounded-3xl p-4",
-              "border-white/15 bg-gradient-to-b from-white/10 to-white/0 shadow-soft-xl"
-            )}
-          >
-            <div className="flex items-center justify-between text-[11px] text-zinc-400">
-              <span className="inline-flex items-center gap-1">
-                <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
-                Live mesh
-              </span>
-              <span className="rounded-full bg-black/40 px-2 py-0.5 text-[10px] text-zinc-300">
-                Multi-tenant
-              </span>
-            </div>
-
-            <div className="mt-4 space-y-3 rounded-2xl bg-black/60 p-4 ring-1 ring-white/10">
-              <div className="text-[11px] text-zinc-500">Provisioned tenant</div>
-              <div className="flex items-baseline gap-2 text-xs">
-                <span className="rounded-full bg-emerald-500/10 px-2 py-1 text-[11px] font-medium text-emerald-300">
-                  devi.vntg.solutions
-                </span>
-                <span className="rounded-full bg-zinc-900 px-2 py-1 text-[10px] text-zinc-400">
-                  Ready in 90s
-                </span>
-              </div>
-
-              <div className="mt-4 grid grid-cols-3 gap-3 text-[10px] text-zinc-400">
-                <div className="rounded-xl bg-white/5 p-2">
-                  <div className="text-[10px] text-zinc-500">Latency</div>
-                  <div className="mt-1 text-sm font-semibold text-zinc-100">
-                    42 ms
-                  </div>
-                </div>
-                <div className="rounded-xl bg-white/5 p-2">
-                  <div className="text-[10px] text-zinc-500">Regions</div>
-                  <div className="mt-1 text-sm font-semibold text-zinc-100">
-                    3
-                  </div>
-                </div>
-                <div className="rounded-xl bg-white/5 p-2">
-                  <div className="text-[10px] text-zinc-500">Deploys</div>
-                  <div className="mt-1 text-sm font-semibold text-zinc-100">
-                    27 / day
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </motion.div>
-      </div>
     </Section>
   );
 }

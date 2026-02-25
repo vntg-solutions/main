@@ -1,18 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {
-  Boxes,
-  Cloud,
-  RefreshCcw,
-  ReceiptText,
-  ArrowUpRight,
-} from "lucide-react";
+import { Boxes, Cloud, RefreshCcw, ReceiptText } from "lucide-react";
 import { Section } from "./section";
 import { cn } from "../lib/utils";
 
 const cardBase =
-  "relative flex flex-col justify-between rounded-3xl border border-white/10 bg-white/5 p-5 text-sm text-zinc-200 shadow-soft-xl";
+  "flex flex-col justify-between rounded-2xl border border-white/10 bg-black/60 p-5 text-sm text-zinc-200";
 
 export function ServicesBento() {
   return (
@@ -30,12 +24,9 @@ export function ServicesBento() {
             service is designed to interlock.
           </p>
         </div>
-        <div className="text-xs text-zinc-500">
-          <span className="inline-flex items-center gap-2 rounded-full bg-black/60 px-3 py-1 ring-1 ring-white/10">
-            <span className="h-1.5 w-1.5 rounded-full bg-sky-400" />
-            Built for operators, loved by engineers.
-          </span>
-        </div>
+        <p className="text-xs text-zinc-500">
+          Practical services you can use this quarter, not next year.
+        </p>
       </div>
 
       <div className="grid gap-4 md:grid-cols-4 md:grid-rows-2">
@@ -66,11 +57,6 @@ export function ServicesBento() {
             Usage-based, subscription, and hybrid models with ready-to-plug
             payment rails and dunning workflows.
           </p>
-          <div className="mt-3 grid grid-cols-3 gap-2 text-[11px] text-zinc-400">
-            <Metric label="Error rate" value="&lt; 0.3%" />
-            <Metric label="Currencies" value="12+" />
-            <Metric label="Reconciliation" value="Daily" />
-          </div>
         </BentoCard>
 
         <BentoCard
@@ -123,17 +109,14 @@ function BentoCard({
 }: BentoCardProps) {
   return (
     <motion.article
-      whileHover={{ y: -4, scale: 1.01 }}
-      transition={{ type: "spring", stiffness: 260, damping: 20 }}
-      className={cn(cardBase, "group relative overflow-hidden", className)}
+      whileHover={{ y: -2 }}
+      transition={{ duration: 0.15 }}
+      className={cn(cardBase, "relative overflow-hidden", className)}
     >
-      <div className="absolute inset-0 bg-gradient-to-br from-accent/10 via-transparent to-sky-500/5 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-
       <div className="relative flex items-start justify-between gap-3">
-        <div className="flex h-9 w-9 items-center justify-center rounded-2xl bg-black/60 ring-1 ring-white/10">
+        <div className="flex h-9 w-9 items-center justify-center rounded-2xl bg-white/5 ring-1 ring-white/10">
           {icon}
         </div>
-        <ArrowUpRight className="h-4 w-4 text-zinc-500 transition group-hover:text-zinc-200" />
       </div>
 
       <div className="relative mt-4 space-y-2">
