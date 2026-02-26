@@ -5,7 +5,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, ShieldCheck, Sparkles } from "lucide-react";
 import { Section } from "./section";
 
-const rotatingWords = ["websites", "bill generation", "automation"];
+const rotatingWords = [
+  "small-business websites",
+  "bill generation tools",
+  "simple automation",
+];
 
 export function Hero() {
   const [index, setIndex] = useState(0);
@@ -34,7 +38,7 @@ export function Hero() {
 
           <div className="space-y-4">
             <h1 className="text-balance text-3xl font-semibold leading-tight md:text-5xl">
-              We build{" "}
+              We design and host{" "}
               <span className="relative inline-block">
                 <span className="opacity-40">websites</span>
                 <span className="absolute inset-0">
@@ -57,9 +61,10 @@ export function Hero() {
               </span>
             </h1>
             <p className="max-w-md text-sm leading-relaxed text-zinc-400 md:text-base">
-              We build websites, client portals, and practical tools — like
-              template-based bill generation and automation — so small businesses
-              can run smoother and look professional.
+              We design and host websites, create client portals, and build
+              practical tools - like template-based bill generation and
+              automation - so small businesses can run smoother and look
+              professional.
             </p>
           </div>
 

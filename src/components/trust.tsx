@@ -26,7 +26,7 @@ export function Trust() {
           </h2>
           <p className="max-w-xs text-xs text-zinc-500">
             We partner with local and growing businesses that need websites,
-            tools, and automation — without enterprise complexity.
+            tools, and automation - without enterprise complexity.
           </p>
         </div>
 

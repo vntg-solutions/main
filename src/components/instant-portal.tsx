@@ -14,12 +14,12 @@ export function InstantPortal() {
             Client sites & portals
           </p>
           <h2 className="text-balance text-2xl font-semibold md:text-3xl">
-            Your business online — custom sites and client-facing portals.
+            Your business online - custom sites and client-facing portals.
           </h2>
           <p className="max-w-md text-sm leading-relaxed text-zinc-400">
             We create professional websites and dedicated portals (like
             devi.vntg.solutions) so you can serve customers and partners with a
-            clear, branded presence — without the complexity.
+            clear, branded presence - without the complexity.
           </p>
           <div className="grid gap-4 text-xs text-zinc-300 md:grid-cols-2">
             <div className="space-y-2 rounded-2xl bg-white/5 p-4 ring-1 ring-white/10">

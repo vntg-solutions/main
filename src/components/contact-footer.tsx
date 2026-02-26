@@ -19,7 +19,7 @@ export function ContactFooter() {
               Ready to simplify?
             </h2>
             <p className="max-w-sm text-sm text-zinc-400">
-              Tell us what you need — a website, bill generator, automation, or
+              Tell us what you need - a website, bill generator, automation, or
               something else. We&apos;ll get back with a clear next step.
             </p>
             <div className="flex flex-wrap gap-4 text-xs text-zinc-500">
@@ -70,7 +70,7 @@ export function ContactFooter() {
                 required
                 rows={3}
                 className="w-full resize-none rounded-xl border border-white/10 bg-black/60 px-3 py-2 text-xs text-zinc-100 outline-none ring-0 ring-accent/40 transition focus:border-accent/60 focus:ring-1"
-                placeholder="e.g. a website, bill/invoice tool, client portal, or automation — and any deadlines or constraints."
+                placeholder="e.g. a website, bill/invoice tool, client portal, or automation - and any deadlines or constraints."
               />
             </Field>
 

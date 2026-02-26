@@ -21,7 +21,7 @@ export function ServicesBento() {
           </h2>
           <p className="mt-2 max-w-md text-sm text-zinc-400">
             From a simple website or bill generator to client portals and
-            workflow tools — we build what you need to run better.
+            workflow tools - we build what you need to run better.
           </p>
         </div>
         <p className="text-xs text-zinc-500">
@@ -37,13 +37,13 @@ export function ServicesBento() {
           highlight="A professional presence that works for you."
         >
           <p className="mt-2 text-xs text-zinc-400">
-            Custom sites and landing pages for your business — clear, fast, and
+            Custom sites and landing pages for your business - clear, fast, and
             easy to update. We handle design, hosting, and a smooth handoff.
           </p>
           <ul className="mt-3 space-y-1.5 text-[11px] text-zinc-400">
-            <li>— Brand-aligned design and copy.</li>
-            <li>— Mobile-friendly and easy to maintain.</li>
-            <li>— Optional client or customer portals.</li>
+            <li>- Brand-aligned design and copy.</li>
+            <li>- Mobile-friendly and easy to maintain.</li>
+            <li>- Optional client or customer portals.</li>
           </ul>
         </BentoCard>
 
@@ -55,7 +55,7 @@ export function ServicesBento() {
         >
           <p className="mt-2 text-xs text-zinc-400">
             We build tools that take your inputs (e.g. line items, dates, client
-            details) and generate polished PDFs — invoices, quotes, or reports —
+            details) and generate polished PDFs - invoices, quotes, or reports -
             ready to send.
           </p>
         </BentoCard>
@@ -71,9 +71,9 @@ export function ServicesBento() {
             workflows, and small apps that reduce manual work and errors.
           </p>
           <ul className="mt-3 space-y-1.5 text-[11px] text-zinc-400">
-            <li>— Forms and data collection that feed your process.</li>
-            <li>— Integrations with tools you already use.</li>
-            <li>— Simple dashboards or internal tools when needed.</li>
+            <li>- Forms and data collection that feed your process.</li>
+            <li>- Integrations with tools you already use.</li>
+            <li>- Simple dashboards or internal tools when needed.</li>
           </ul>
         </BentoCard>
 
