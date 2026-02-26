@@ -7,6 +7,7 @@ import { ReactNode } from "react";
 type SectionProps = {
   children: ReactNode;
   className?: string;
+  id?: string;
 } & MotionProps;
 
 export function Section({ children, className, ...rest }: SectionProps) {

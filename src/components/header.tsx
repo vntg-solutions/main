@@ -4,8 +4,6 @@ import { motion } from "framer-motion";
 import { ArrowUpRight, LogIn } from "lucide-react";
 import { cn } from "../lib/utils";
 
-const navItems = ["Services", "How it works", "Contact"];
-
 export function Header() {
   return (
     <motion.header
