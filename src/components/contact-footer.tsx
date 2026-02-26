@@ -8,7 +8,7 @@ export function ContactFooter() {
   };
 
   return (
-    <footer className="mt-6 border-t border-white/10 bg-black/70">
+    <footer id="contact" className="mt-6 border-t border-white/10 bg-black/70">
       <Section className="mx-auto max-w-6xl py-10 md:py-14">
         <div className="grid gap-8 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] md:items-start">
           <div className="space-y-4">
@@ -16,21 +16,21 @@ export function ContactFooter() {
               Contact
             </p>
             <h2 className="text-2xl font-semibold md:text-3xl">
-              Ready to scale?
+              Ready to simplify?
             </h2>
             <p className="max-w-sm text-sm text-zinc-400">
-              Tell us how your infrastructure behaves today and where it needs
-              to be. We&apos;ll respond with a focused, actionable plan.
+              Tell us what you need — a website, bill generator, automation, or
+              something else. We&apos;ll get back with a clear next step.
             </p>
             <div className="flex flex-wrap gap-4 text-xs text-zinc-500">
               <div>
-                <p className="text-zinc-400">Time to first call</p>
+                <p className="text-zinc-400">Response time</p>
                 <p className="text-sm font-semibold text-zinc-100">&lt; 5 days</p>
               </div>
               <div>
-                <p className="text-zinc-400">Ideal partners</p>
+                <p className="text-zinc-400">Best fit</p>
                 <p className="text-sm font-semibold text-zinc-100">
-                  B2B SaaS · ops-heavy teams
+                  Small business · solopreneurs · growing teams
                 </p>
               </div>
             </div>
@@ -65,12 +65,12 @@ export function ContactFooter() {
               />
             </Field>
 
-            <Field label="What do you want to build or migrate?">
+            <Field label="What do you need?">
               <textarea
                 required
                 rows={3}
                 className="w-full resize-none rounded-xl border border-white/10 bg-black/60 px-3 py-2 text-xs text-zinc-100 outline-none ring-0 ring-accent/40 transition focus:border-accent/60 focus:ring-1"
-                placeholder="Share your systems, constraints, and the business outcome you need."
+                placeholder="e.g. a website, bill/invoice tool, client portal, or automation — and any deadlines or constraints."
               />
             </Field>
 

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowUpRight, LogIn } from "lucide-react";
 import { cn } from "../lib/utils";
 
-const navItems = ["Solutions", "Platform", "Use Cases", "Contact"];
+const navItems = ["Services", "How it works", "Contact"];
 
 export function Header() {
   return (
@@ -29,34 +29,51 @@ export function Header() {
               VANTAGE
             </div>
             <p className="hidden text-[11px] text-zinc-500 md:block">
-              Digital infrastructure studio
+              Websites, tools & automation for small business
             </p>
           </div>
         </div>
 
         <nav className="hidden items-center gap-8 text-sm text-zinc-400 md:flex">
-          {navItems.map((item) => (
-            <button
-              key={item}
-              className="relative cursor-pointer text-xs font-medium tracking-wide text-zinc-400 transition hover:text-zinc-100"
-              type="button"
-            >
-              {item}
-              <span className="absolute inset-x-0 -bottom-1 h-px origin-left scale-x-0 bg-gradient-to-r from-accent/0 via-accent/80 to-accent/0 transition-transform duration-200 ease-out group-hover:scale-x-100" />
-            </button>
-          ))}
+          <button
+            type="button"
+            onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
+            className="relative cursor-pointer text-xs font-medium tracking-wide text-zinc-400 transition hover:text-zinc-100"
+          >
+            Services
+            <span className="absolute inset-x-0 -bottom-1 h-px origin-left scale-x-0 bg-gradient-to-r from-accent/0 via-accent/80 to-accent/0 transition-transform duration-200 ease-out group-hover:scale-x-100" />
+          </button>
+          <button
+            type="button"
+            onClick={() => document.getElementById("how-it-works")?.scrollIntoView({ behavior: "smooth" })}
+            className="relative cursor-pointer text-xs font-medium tracking-wide text-zinc-400 transition hover:text-zinc-100"
+          >
+            How it works
+            <span className="absolute inset-x-0 -bottom-1 h-px origin-left scale-x-0 bg-gradient-to-r from-accent/0 via-accent/80 to-accent/0 transition-transform duration-200 ease-out group-hover:scale-x-100" />
+          </button>
+          <button
+            type="button"
+            onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
+            className="relative cursor-pointer text-xs font-medium tracking-wide text-zinc-400 transition hover:text-zinc-100"
+          >
+            Contact
+            <span className="absolute inset-x-0 -bottom-1 h-px origin-left scale-x-0 bg-gradient-to-r from-accent/0 via-accent/80 to-accent/0 transition-transform duration-200 ease-out group-hover:scale-x-100" />
+          </button>
         </nav>
 
         <div className="flex items-center gap-2">
-          <button
-            type="button"
+          <a
+            href="https://devi.vntg.solutions"
+            target="_blank"
+            rel="noopener noreferrer"
             className="hidden items-center gap-1.5 rounded-full border border-white/10 px-3 py-1.5 text-xs font-medium text-zinc-300 transition hover:border-white/20 hover:bg-white/5 md:inline-flex"
           >
             <LogIn className="h-3.5 w-3.5" />
             Client Portal
-          </button>
+          </a>
           <button
             type="button"
+            onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
             className="inline-flex items-center gap-1.5 rounded-full bg-accent px-3.5 py-1.5 text-xs font-semibold text-primary shadow-soft-xl transition hover:bg-accent/90"
           >
             Book intro

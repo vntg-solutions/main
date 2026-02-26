@@ -9,9 +9,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Vantage Solutions — Digital Infrastructure Studio",
+  title: "Vantage Solutions — Websites, Tools & Automation for Small Business",
   description:
-    "Vantage Solutions architects premium, ready-to-scale digital infrastructure for modern businesses — from SaaS platforms to cloud deployment and legacy migration.",
+    "Vantage Solutions helps small businesses with website creation, tool implementation, and automation — from professional sites and client portals to bill generation and workflows that simplify operations.",
 };
 
 export default function RootLayout({

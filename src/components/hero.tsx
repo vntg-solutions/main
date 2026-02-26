@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, ShieldCheck, Sparkles } from "lucide-react";
 import { Section } from "./section";
 
-const rotatingWords = ["Small Business", "Scale-ups", "Global Enterprise"];
+const rotatingWords = ["websites", "bill generation", "automation"];
 
 export function Hero() {
   const [index, setIndex] = useState(0);
@@ -28,15 +28,15 @@ export function Hero() {
           >
             <Sparkles className="h-3 w-3 text-accent" />
             <span className="uppercase tracking-[0.18em] text-zinc-400">
-              Infrastructure, on day zero
+              Solutions that simplify operations
             </span>
           </motion.div>
 
           <div className="space-y-4">
             <h1 className="text-balance text-3xl font-semibold leading-tight md:text-5xl">
-              Architecting digital infrastructure for{" "}
+              We build{" "}
               <span className="relative inline-block">
-                <span className="opacity-40">Small Business</span>
+                <span className="opacity-40">websites</span>
                 <span className="absolute inset-0">
                   <AnimatePresence mode="wait">
                     <motion.span
@@ -57,27 +57,30 @@ export function Hero() {
               </span>
             </h1>
             <p className="max-w-md text-sm leading-relaxed text-zinc-400 md:text-base">
-              Vantage Solutions provisions opinionated, secure, and observable
-              infrastructure so your teams can deploy products — not patchwork
-              pipelines.
+              We build websites, client portals, and practical tools — like
+              template-based bill generation and automation — so small businesses
+              can run smoother and look professional.
             </p>
           </div>
 
           <div className="flex flex-wrap items-center gap-3">
             <button
               type="button"
+              onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
               className="inline-flex items-center gap-2 rounded-full bg-accent px-4 py-2 text-sm font-semibold text-primary shadow-soft-xl transition hover:bg-accent/90"
             >
-              Launch an instant portal
+              Get started
               <ArrowRight className="h-4 w-4" />
             </button>
-            <button
-              type="button"
+            <a
+              href="https://devi.vntg.solutions"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-medium text-zinc-200 backdrop-blur-md transition hover:border-white/20 hover:bg-white/10"
             >
               <ShieldCheck className="h-3.5 w-3.5 text-sky-300" />
-              SOC2-aligned from day one
-            </button>
+              See client portal example
+            </a>
           </div>
 
         </div>

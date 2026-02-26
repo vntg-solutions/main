@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Boxes, Cloud, RefreshCcw, ReceiptText } from "lucide-react";
+import { FileText, Globe2, Settings, Zap } from "lucide-react";
 import { Section } from "./section";
 import { cn } from "../lib/utils";
 
@@ -10,81 +10,82 @@ const cardBase =
 
 export function ServicesBento() {
   return (
-    <Section className="mx-auto max-w-6xl py-10 md:py-16">
+    <Section id="services" className="mx-auto max-w-6xl py-10 md:py-16">
       <div className="mb-8 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
         <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-zinc-400">
             Services
           </p>
           <h2 className="mt-2 text-2xl font-semibold md:text-3xl">
-            A modular stack of infrastructure-native services.
+            Websites, tools, and automation for small business.
           </h2>
           <p className="mt-2 max-w-md text-sm text-zinc-400">
-            Start with one module or launch an end-to-end platform — every
-            service is designed to interlock.
+            From a simple website or bill generator to client portals and
+            workflow tools — we build what you need to run better.
           </p>
         </div>
         <p className="text-xs text-zinc-500">
-          Practical services you can use this quarter, not next year.
+          Practical solutions you can use right away.
         </p>
       </div>
 
       <div className="grid gap-4 md:grid-cols-4 md:grid-rows-2">
         <BentoCard
           className="md:col-span-2 md:row-span-2"
-          title="Custom SaaS · GodownOS"
-          icon={<Boxes className="h-5 w-5 text-sky-300" />}
-          highlight="Your operations system, turned into SaaS."
+          title="Website creation"
+          icon={<Globe2 className="h-5 w-5 text-sky-300" />}
+          highlight="A professional presence that works for you."
         >
           <p className="mt-2 text-xs text-zinc-400">
-            We translate your real-world operational workflows into a robust,
-            multi-tenant SaaS built on GodownOS primitives.
+            Custom sites and landing pages for your business — clear, fast, and
+            easy to update. We handle design, hosting, and a smooth handoff.
           </p>
           <ul className="mt-3 space-y-1.5 text-[11px] text-zinc-400">
-            <li>— Inventory-aware process engines.</li>
-            <li>— Granular access + audit-ready logs.</li>
-            <li>— Upgrade-safe extension points.</li>
+            <li>— Brand-aligned design and copy.</li>
+            <li>— Mobile-friendly and easy to maintain.</li>
+            <li>— Optional client or customer portals.</li>
           </ul>
         </BentoCard>
 
         <BentoCard
           className="md:col-span-2"
-          title="Automated Invoicing"
-          icon={<ReceiptText className="h-5 w-5 text-emerald-300" />}
-          highlight="Invoices that close themselves."
+          title="Bill & document generation"
+          icon={<FileText className="h-5 w-5 text-emerald-300" />}
+          highlight="Template-based PDFs you can share with customers."
         >
           <p className="mt-2 text-xs text-zinc-400">
-            Usage-based, subscription, and hybrid models with ready-to-plug
-            payment rails and dunning workflows.
+            We build tools that take your inputs (e.g. line items, dates, client
+            details) and generate polished PDFs — invoices, quotes, or reports —
+            ready to send.
           </p>
         </BentoCard>
 
         <BentoCard
           className="md:row-span-2"
-          title="Cloud Deployment"
-          icon={<Cloud className="h-5 w-5 text-sky-300" />}
-          highlight="Golden paths, not snowflakes."
+          title="Automation & tools"
+          icon={<Zap className="h-5 w-5 text-amber-300" />}
+          highlight="Workflows and tools that simplify operations."
         >
           <p className="mt-2 text-xs text-zinc-400">
-            Blueprinted environments for dev, staging, and production with
-            baked-in observability and security.
+            Custom tools and light automation: forms, integrations, repeatable
+            workflows, and small apps that reduce manual work and errors.
           </p>
           <ul className="mt-3 space-y-1.5 text-[11px] text-zinc-400">
-            <li>— GitOps pipelines with policy gates.</li>
-            <li>— Environment drift detection.</li>
-            <li>— Regionalized rollouts when you are ready.</li>
+            <li>— Forms and data collection that feed your process.</li>
+            <li>— Integrations with tools you already use.</li>
+            <li>— Simple dashboards or internal tools when needed.</li>
           </ul>
         </BentoCard>
 
         <BentoCard
           className="md:col-span-1"
-          title="Legacy Migration"
-          icon={<RefreshCcw className="h-5 w-5 text-amber-300" />}
-          highlight="From brittle to boring."
+          title="Client portals"
+          icon={<Settings className="h-5 w-5 text-sky-300" />}
+          highlight="Dedicated spaces for your clients."
         >
           <p className="mt-2 text-xs text-zinc-400">
-            Progressive rewrites with strangler patterns, live shadow traffic,
-            and rollback plans.
+            Subdomain-based portals (like devi.vntg.solutions) so you can give
+            clients a branded, secure place to access info or services.
           </p>
         </BentoCard>
       </div>

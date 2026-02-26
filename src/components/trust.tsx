@@ -19,14 +19,14 @@ export function Trust() {
       <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
         <div className="space-y-2">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-zinc-400">
-            Social proof
+            Who we work with
           </p>
           <h2 className="text-sm font-medium text-zinc-300 md:text-base">
-            Trusted by local and global businesses.
+            Small businesses and teams that want to run smarter.
           </h2>
           <p className="max-w-xs text-xs text-zinc-500">
-            From owner-operated warehouses to multi-region teams, Vantage meets
-            your operational reality where it is.
+            We partner with local and growing businesses that need websites,
+            tools, and automation — without enterprise complexity.
           </p>
         </div>
 
