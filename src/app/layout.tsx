@@ -9,9 +9,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Vantage Solutions - Websites, Tools & Automation for Small Business",
+  title: "Vantage Solutions - Client Services & CareCue | Websites, Tools & Products",
   description:
-    "Vantage Solutions helps small businesses with website creation, tool implementation, and automation - from professional sites and client portals to bill generation and workflows that simplify operations.",
+    "Vantage Solutions delivers client services—websites, portals, bill generation, and automation—and builds in-house products like CareCue, your personal health companion app for water, sleep, meds and appointments.",
 };
 
 export default function RootLayout({

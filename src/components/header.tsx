@@ -35,6 +35,14 @@ export function Header() {
         <nav className="hidden items-center gap-8 text-sm text-zinc-400 md:flex">
           <button
             type="button"
+            onClick={() => document.getElementById("products")?.scrollIntoView({ behavior: "smooth" })}
+            className="relative cursor-pointer text-xs font-medium tracking-wide text-zinc-400 transition hover:text-zinc-100"
+          >
+            Products
+            <span className="absolute inset-x-0 -bottom-1 h-px origin-left scale-x-0 bg-gradient-to-r from-accent/0 via-accent/80 to-accent/0 transition-transform duration-200 ease-out group-hover:scale-x-100" />
+          </button>
+          <button
+            type="button"
             onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
             className="relative cursor-pointer text-xs font-medium tracking-wide text-zinc-400 transition hover:text-zinc-100"
           >
@@ -60,6 +68,14 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
+          <a
+            href="https://carecue.vntg.solutions"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden items-center gap-1.5 rounded-full border border-white/10 px-3 py-1.5 text-xs font-medium text-zinc-300 transition hover:border-white/20 hover:bg-white/5 md:inline-flex"
+          >
+            CareCue
+          </a>
           <a
             href="https://devi.vntg.solutions"
             target="_blank"

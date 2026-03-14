@@ -6,9 +6,9 @@ import { ArrowRight, ShieldCheck, Sparkles } from "lucide-react";
 import { Section } from "./section";
 
 const rotatingWords = [
-  "small-business websites",
-  "bill generation tools",
-  "simple automation",
+  "client websites & portals",
+  "bill generation & automation",
+  "our own products — like CareCue",
 ];
 
 export function Hero() {
@@ -32,15 +32,15 @@ export function Hero() {
           >
             <Sparkles className="h-3 w-3 text-accent" />
             <span className="uppercase tracking-[0.18em] text-zinc-400">
-              Solutions that simplify operations
+              Client services & in-house products
             </span>
           </motion.div>
 
           <div className="space-y-4">
             <h1 className="text-balance text-3xl font-semibold leading-tight md:text-5xl">
-              We design and host{" "}
+              We build for clients and for ourselves{" "}
               <span className="relative inline-block">
-                <span className="opacity-40">websites</span>
+                <span className="opacity-40">—</span>
                 <span className="absolute inset-0">
                   <AnimatePresence mode="wait">
                     <motion.span
@@ -61,10 +61,9 @@ export function Hero() {
               </span>
             </h1>
             <p className="max-w-md text-sm leading-relaxed text-zinc-400 md:text-base">
-              We design and host websites, create client portals, and build
-              practical tools - like template-based bill generation and
-              automation - so small businesses can run smoother and look
-              professional.
+              For clients: websites, client portals, bill generation, and
+              automation. We also ship our own products — like CareCue, the
+              health companion app we just launched — so you see what we can do.
             </p>
           </div>
 
@@ -77,14 +76,21 @@ export function Hero() {
               Get started
               <ArrowRight className="h-4 w-4" />
             </button>
+            <button
+              type="button"
+              onClick={() => document.getElementById("products")?.scrollIntoView({ behavior: "smooth" })}
+              className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-medium text-zinc-200 backdrop-blur-md transition hover:border-white/20 hover:bg-white/10"
+            >
+              <ShieldCheck className="h-3.5 w-3.5 text-sky-300" />
+              See CareCue & our products
+            </button>
             <a
               href="https://devi.vntg.solutions"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-medium text-zinc-200 backdrop-blur-md transition hover:border-white/20 hover:bg-white/10"
             >
-              <ShieldCheck className="h-3.5 w-3.5 text-sky-300" />
-              See client portal example
+              Client portal example
             </a>
           </div>
 
